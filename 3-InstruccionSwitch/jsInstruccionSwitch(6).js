@@ -80,9 +80,11 @@ var laHora = document.getElementById('hora').value;
     {
     }
     case '20':
+     alert ('Es de noche.')
     {
     }
     case '21':
+
     { 
     }
     case '22':
