@@ -9,3 +9,9 @@ while (sexo !='f' && sexo !='m'){
 }
 
 }//FIN DE LA FUNCIÓN
+
+
+/////adivina el numero con while 
+/// while (numero == numerosecreto)
+//secreto = random();
+//
