@@ -1,7 +1,8 @@
-function Mostrar()
-{
+    function Mostrar(){
+        var ingre = prompt ('Ingrese un num')
+        var cotnador = 0
 
-
-
-
-}//FIN DE LA FUNCIÓN
+        for (var i=1 <= ingre; i++)
+        
+   
+    }//FIN DE LA FUNCIÓN
