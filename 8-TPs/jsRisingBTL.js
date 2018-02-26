@@ -44,13 +44,15 @@ function ComenzarIngreso ()
              edad = parseInt(edad);
              document.getElementById('Edad').value = edad  
 
-    }
-        sexo = prompt ('Ingrese su sexo porfavor (M O F)')
+    }   
+        sexo = prompt ('Ingrese su sexo porfavor (m o f)')
 
         while (sexo != "f" && sexo != "m")
     {
-        document.getElementById('Sexo').value = sexo
-        break;
+        sexo = prompt ('Ingrese su sexo porfavor (m o f)')
+
+       document.getElementById('Sexo').value = sexo
+        
     }
 
         estadoc = prompt ('Ingrese su estado civil porfavor, 1 para soltero, 2 para casado, 3 para divorciado y 4 para viudo)'); 
