@@ -23,10 +23,10 @@ function ComenzarIngreso ()
     edad = prompt('ingrese su edad por favor');
     edad = parseInt(edad);
       
-              while (edad>=18 || edad <91)
+             while (edad>=18 || edad <91)
     {
-             document.getElementById('Edad').value = edad  
-             break;
+            document.getElementById('Edad').value = edad  
+            break;
     }
             while(isNaN(edad))
     {
@@ -44,7 +44,6 @@ function ComenzarIngreso ()
              edad = parseInt(edad);
              document.getElementById('Edad').value = edad  
 
-
     }
         sexo = prompt ('Ingrese su sexo porfavor (M O F)')
 
@@ -56,46 +55,79 @@ function ComenzarIngreso ()
 
         estadoc = prompt ('Ingrese su estado civil porfavor, 1 para soltero, 2 para casado, 3 para divorciado y 4 para viudo)'); 
         estadoc = parseInt (estadoc);
-        
-        if (estadoc == 1 )
+       
+        if (estadoc === 1 )
      {
          estadoc='Soltero'
      }
-       else if (estadoc == 2 )
+       else if (estadoc === 2 )
      {
         estadoc ='Casado'
      }
-       else if (estadoc == 3 )
+       else if (estadoc === 3 )
      {
          'Divorciado'
-                }
-       else if (estadoc == 4 )
+     }
+       else if (estadoc === 4 )
      {
          'Viudo'
      }
-            document.getElementById('EstadoCivil').value = 'Viudo'
+            document.getElementById('EstadoCivil').value = estadoc
 
+            sueldo = prompt ('Ingrese su sueldo por favor(sueldo bruto, no menor a 8000)');
+            sueldo = parseInt (sueldo);
+            while (sueldo<8000)
+     {
+            alert('Usted a ingresado un monto menor a 8000, por favor ingrese otro monto.')
+             sueldo = prompt ('Ingrese su sueldo por favor(sueldo bruto, no menor a 8000)');
+             sueldo = parseInt (sueldo);
+            continue;
+     }
+            while (isNaN(sueldo)) 
+    {
+            alert('Usted a ingresado un monto invalido, por favor ingrese otro monto.')
+            sueldo = prompt ('Ingrese su sueldo por favor(sueldo bruto, no menor a 8000)');
+            sueldo = parseInt (sueldo);
+            continue;
+     }
+             if (sueldo >= 8000) 
+     {
+             document.getElementById('Sueldo').value = sueldo            
+             
+      }
 
+      legajo = prompt ('Ingrese su numero de lejago (numerico de 4 cifras sin ceros a la izquierda)');
+      legajo = parseInt (legajo);
 
+      while (isNaN(legajo))
+      {
+          Alert ('usted a ingresado un numero de legajo invalido, por favor ingrese un numero valido')
+          legajo = prompt ('Ingrese su numero de lejago (numerico de 4 cifras sin ceros a la izquierda)');
+          legajo = parseInt (legajo); 
+          continue;
+      }
+      while (legajo<=9999)
+      {
+          document.getElementById('Legajo').value = legajo;
+          break;
+      }
 
-    
-              
+    nacionalidad = prompt ('Ingrese su nacionalidad, en caso de usted ser Argentino, ingrese "A", en caso de ser extranjero "E" y en caso de ser nacionalizado "N"')
+
+     if (nacionalidad === 'a' )
+     {
+         nacionalidad= 'Argentino/a'
+     }
+       else if (nacionalidad === 'e' )
+    {
+     nacionalidad = 'Extranjero/a'
+     }
+       else if (nacionalidad === 'n' )
+     {
+         nacionalidad = 'Nacionalizado/a'
+     }
+      document.getElementById('Nacionalidad').value = nacionalidad;
+
+     
+                 
 }
-
-
-
-
-
-
-
-
-
-
-
-   //  = prompt ('Ingrese su sueldo porfavor(sueldo bruto, no menor a 8000)').value;
-   //  = prompt ('Ingrese su numero de lejago (numerico de 4 cifras sin ceros a la izquierda)').value;
-   // = prompt ('Ingrese su nacionalidad, en caso de usted ser Argentino, ingrese "A", en caso de ser extranjero "E" y en caso de ser nacionalizado "N"')
-
-
-
-
